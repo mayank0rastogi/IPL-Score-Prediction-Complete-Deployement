@@ -1,7 +1,7 @@
 # Importing essential libraries
 from flask import Flask, render_template, request
-import pickle
 import numpy as np
+import pickle
 
 # Load the Random Forest CLassifier model
 filename = 'lr-model.pkl'
@@ -11,11 +11,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-	return render_template('index-1.html')
+ return render_template('index-1.html')
     
 @app.route('/report')
 def report():
-   return render_template('report.html')
+ return render_template('report.html')
 
 @app.route('/predict', methods=['POST'])
 def predict():
