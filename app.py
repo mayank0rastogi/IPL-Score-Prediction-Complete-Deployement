@@ -4,8 +4,7 @@ import numpy as np
 import pickle
 
 # Load the Random Forest CLassifier model
-filename = 'lr-model.pkl'
-lr_regressor = pickle.load(open(filename, 'rb'))
+lr_regressor = pickle.load(open('lr-model.pkl', 'rb'))
 
 app = Flask(__name__)
 
